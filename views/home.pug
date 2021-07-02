@@ -1,0 +1,51 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+  
+block style 
+  style 
+    include ../static/style.css
+
+block content
+  section#introsection 
+    div welcome to Ayush Dance Academy
+    div.small Eat sleep Dance Repeat
+
+  section#missionsection 
+     h2 Our mission
+     div.cards
+      div.card
+        h3 dance pperfection
+        div.cardbox
+        div.card-img
+          img(src="/static/img/man.png")
+
+          div.cardcontent
+            p This is where Hritik Roshan was taught 
+      div.card
+        h3 LOve the way you lie
+        div.cardbox
+          div.card-img
+            img(src="/static/img/manwomen.jpg")
+
+          div.cardcontent
+            p This is where Hritik Roshan was taught 
+
+      div.card
+         h3 Expert teaching
+         div.cardbox
+          div.card-img
+            img(src="/static/img/women.png")
+
+          div.cardcontent
+            p This is where Hritik Roshan was taught 
+
+         
+  section#sponsorsection 
+     h2 Our Sponsors
+     div#sponsors
+         img(src="/static/img/microsoft.png", alt="our sponser image", class="spimage")
+         img(src="/static/img/apple.png", alt="our sponser image", class="spimage")
+         img(src="/static/img/twitter.png", alt="our sponser image", class="spimage")
+         img(src="/static/img/skype.png", alt="our sponser image", class="spimage")
